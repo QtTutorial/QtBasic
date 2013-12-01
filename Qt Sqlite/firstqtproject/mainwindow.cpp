@@ -36,6 +36,8 @@ bool MainWindow::DBConnection(QStringList &citylist)
             citylist.append(query.value(0).toString().trimmed());
         }
         qDebug()<<"Success";
+		db.close();
+
          return true;
     }
     else return false;
