@@ -37,8 +37,7 @@ bool MainWindow::DBConnection(QStringList &citylist)
         }
         qDebug()<<"Success";
 		db.close();
-
-         return true;
+        return true;
     }
     else return false;
 }
